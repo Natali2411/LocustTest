@@ -2,13 +2,13 @@
 import urllib3
 from locust import HttpUser, task, constant_pacing
 from locust.log import setup_logging
-import locustfile.config as conf
+import config as conf
 # from load_tests.common.db import TestData
 
 # constant - for a fixed amount of time
 # constant_pacing - for an adaptive time that ensures the task runs (at most) once every X seconds
 # between - for a random time between a min and max value
-from locustfile.api import API
+from api import API
 
 setup_logging("INFO", None)
 urllib3.disable_warnings()
