@@ -3,9 +3,9 @@ import urllib3
 from locust import HttpUser, task, constant_pacing
 from locust.log import setup_logging
 # import config
-from utilities.load_tests.common import config
+from common import config
 # from load_tests.common.db import TestData
-from utilities.load_tests.common.api import API
+from common.api import API
 
 # constant - for a fixed amount of time
 # constant_pacing - for an adaptive time that ensures the task runs (at most) once every X seconds
